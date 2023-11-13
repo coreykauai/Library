@@ -2,11 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library</title>
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <title>The Library</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <h1 class="datitle">Da Library</h1>
+    <div class="centers"><button class="show">New Book</button></div>
+    <dialog>
+      <button autofocus>Close</button>
+      <form action="post">
+        <input type="text" name="book-title" placeholder="Enter Book Title" />
+        <input type="text" name="author-name" placeholder="Enter Author" />
+        <input type="number" name="print-date" placeholder="Print Date" />
+        <button id="add-book" type="submit">Add Book</button>
+      </form>
+    </dialog>
+    <section class="allBooks">
+      <script type="module" src="main.js"></script>
+    </section>
   </body>
 </html>

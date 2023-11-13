@@ -1,0 +1,54 @@
+body {
+  background-color: antiquewhite;
+}
+
+.datitle {
+  font-size: 150px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.centers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.show {
+  height: 80px;
+  width: 150px;
+  font-size: larger;
+}
+
+dialog {
+  border-radius: 0.3rem;
+  background-color: antiquewhite;
+}
+
+::backdrop {
+  backdrop-filter: blur(10px);
+}
+
+.allBooks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.book-container {
+  border: solid 2px black;
+  padding: 12px;
+  background-color: ;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px;
+  height: 30px;
+}
