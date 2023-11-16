@@ -1,13 +1,18 @@
 body {
-  background-color: antiquewhite;
+  background-image: url(janko-ferlic-sfL_QOnmy00-unsplash.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .datitle {
   font-size: 150px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(104, 118, 118);
   display: flex;
   justify-content: center;
   margin: 0;
+  text-shadow: 0px 0px 20px rgb(249, 217, 191);
 }
 
 .centers {
@@ -19,8 +24,17 @@ body {
 
 .show {
   height: 80px;
-  width: 150px;
-  font-size: larger;
+  width: 180px;
+  font-size: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.452);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(101, 136, 133);
+  box-shadow: 0px 0px 20px rgb(249, 217, 191);
+}
+
+.show:hover {
+  background-color: rgb(155, 210, 205);
 }
 
 dialog {
@@ -30,6 +44,15 @@ dialog {
 
 ::backdrop {
   backdrop-filter: blur(10px);
+}
+
+.close {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  position: absolute;
+  left: 35.5rem;
+  bottom: 4rem;
+  cursor: pointer;
 }
 
 .allBooks {
@@ -42,7 +65,7 @@ dialog {
 .book-container {
   border: solid 2px black;
   padding: 12px;
-  background-color: ;
+  border-radius: 0.25rem;
 }
 
 form {
@@ -51,4 +74,53 @@ form {
   gap: 8px;
   margin: 20px;
   height: 30px;
+}
+
+.buttonss {
+  margin: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  height: 5rem;
+  width: 100vw;
+  background-color: rgba(130, 146, 146, 0.534);
+  position: sticky;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 1.3rem;
+}
+
+.filtercont {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  position: relative;
+  right: 150px;
+}
+
+.showfilters {
+  position: relative;
+  left: 75rem;
+  bottom: 5px;
+  width: 100px;
+}
+
+.filter_unread,
+.filter_delete,
+.filter_books {
+  width: 80px;
+}
+
+.hide,
+.showem {
+  display: none;
 }
