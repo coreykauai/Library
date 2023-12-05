@@ -10,9 +10,9 @@
     <h1 class="datitle">LIBRARY</h1>
     <div class="filtercont">
       <button class="showfilters">Filter Books</button>
-      <button class="filter_unread showem">All Unread</button>
-      <button class="filter_books showem">All Books</button>
+      <button class="filter_unread showem">Unread</button>
       <button class="filter_reads showem">Read</button>
+      <button class="filter_books showem">All Books</button>
       <button class="filter_delete showem">Delete All</button>
     </div>
     <div class="centers"><button class="show">New Book</button></div>
@@ -35,7 +35,7 @@
         <form method="dialog">
           <input type="text" name="book-title" placeholder="Enter Book Title" />
           <input type="text" name="author-name" placeholder="Enter Author" />
-          <input type="number" name="print-date" placeholder="Print Date" />
+          <input type="date" name="print-date" placeholder="Print Date" />
           <button id="add-book" type="submit">Add Book</button>
         </form>
       </div>
@@ -45,7 +45,14 @@
       <script type="module" src="main.js"></script>
     </section>
     <div class="foot">
-      <div class="footer">Created By CoreyKauai © 2023</div>
+      <div class="footer">
+        Created By CoreyKauai
+        <img
+          class="git"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        />
+        2023
+      </div>
     </div>
   </body>
 </html>
